@@ -21,3 +21,10 @@ WHEN I choose to continue
 THEN I am prompted to add a new employee
 WHEN I choose to cancel
 THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
+
+
+Boot camps. edX. (n.d.). https://www.edx.org/boot-camps/about 
+
+https://github.com/leafite/Payroll-Tracker
+
+https://leafite.github.io/Payroll-Tracker/
