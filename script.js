@@ -10,7 +10,7 @@ const collectEmployees = function() {
   while(addEmployee){
     const firstName = prompt("Enter first name:")
     const lastName = prompt("Enter last name:")
-    let salary = prompt("Enter salary:")
+    const salary = prompt("Enter salary:")
   
     const employee = {
       firstName: firstName,
@@ -30,9 +30,14 @@ return employeesArray;
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  let total = 0;
+  for (let i = 0; i < employeesArray.length; i++) {
+      total += parseInt(employeesArray[i].salary);
+  }
+  const average = total/ employeesArray.length;
 
-}
+  console.log(`Average Salary: $${average.toFixed(2)} out of ${employeesArray.length} employees`);
+};
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
